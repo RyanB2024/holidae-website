@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Book-Now</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="images/intro-home/logo.png" alt="Brand logo"></div>
+            <ul class="nav-items">
+                <li><a href="Home.html" class="nav-link">Home</a></li>
+                <li><a href="Travel.html" class="nav-link">Travel</a></li>
+                <li><a href="Book-Now.html" class="nav-link">Book Now</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <!--YouTube (https://www.youtube.com/watch?v=b_xI0HDw-RQ) Used to learn radio inputs--->
+    <main class="book-now-container">
+        <h1>Select Vacation Package:</h1>
+        <div class="plans-container">
+            <label for="Italy-select" class="Italy">
+                <h2>Dolomites, Italy</h2>
+                <p>Explore the Dolomites over 7 days from £799, with lodge stays, meals, guided hikes, and mountain
+                    views included. Ideal for couples, hikers, and nature lovers.</p>
+                <input type="radio" name="plan-container" id="Italy-select" checked>
+            </label>
+            <label for="New-York-select" class="New-York">
+                <h2>New York City, USA</h2>
+                <p>Discover New York City with a 4-day, 3-night stay from £699, including hotel, breakfast, and top
+                    attractions. Perfect for solo travelers, culture lovers, and first-timers.</p>
+                <input type="radio" name="plan-container" id="New-York-select">
+            </label>
+            <label for="Portugal-select" class="Portugal">
+                <h2>Algarve, Portugal</h2>
+                <p>Relax in Portugal’s Algarve for 5 days from just £499, with a beachside hotel, breakfast, and guided
+                    tour of Lagos. Perfect for families, sun seekers, and budget travelers.</p>
+                <input type="radio" name="plan-container" id="Portugal-select">
+            </label>
+            <div class="confirm">
+                <a href="purchased.html" id="purchase-link">
+                    <button id="button">Complete Purchase</button>
+                </a>
+            </div>
+        </div>
+        <a href="#" class="to-top">
+            <img src="Images/arrow.png">
+        </a>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,634 @@
+body {
+    background-color: #7ab6d6;
+    margin: 0%;
+}
+
+/*Nav*/
+
+nav {
+    background-color: #7ab6d6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5em;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo img {
+    height: 150px;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    gap: 75px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.container-links {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+/*Home-Page*/
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-para {
+    /*Controls info blocks*/
+    background-color: #417089;
+    color: #000000;
+    padding: 3%;
+}
+
+#go-vacation {
+    display: block;
+    margin: auto;
+    background-color: #64c2f5;
+    color: white;
+    border: white;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+#button:hover {
+    background-color: #205b7a;
+    color: #fff;
+}
+
+#button {
+    background-color: #abccdd;
+    margin-bottom: 30px;
+    font-size: 2em;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*Used for Carousel Slider*/
+
+.slider-wrapper {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    max-height: 100%;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+
+}
+
+/*Travel Options*/
+
+.vacation-package {
+    background-color: #abccdd;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    border-radius: 30px;
+}
+
+.package-container {
+    background-color: #205b7a;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-columns {
+    margin-top: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+}
+
+.text-column {
+    background-color: #7ab6d6;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 33.33333333333%;
+}
+
+/*Book Now*/
+.book-now-container {
+    background-color: #205b7a;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+
+}
+
+.plans-container {
+    color: #c4c4c4;
+
+    p {
+        font-size: .75em;
+    }
+
+}
+
+.confirm {
+    margin-top: 20px;
+}
+
+/*Purchased*/
+
+.purchased {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30%;
+
+}
+
+/*Specific Vacation Pages*/
+
+#holiday {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#holiday-title {
+    background-color: #417089;
+    color: #fff;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.gallery,
+.video-gallery {
+    background-color: #205b7a;
+    margin-bottom: 5%;
+    padding: 50px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery img,
+.video-gallery video {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*Back to top button*/
+.to-top {
+    background-color: white;
+    position: fixed;
+    bottom: 32px;
+    right: 64px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top img {
+    height: 30%;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/*Back Button*/
+.back-button {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: .5%;
+    margin-right: 93%;
+}
+
+.back-button img {
+    padding-top: 26%;
+    padding-right: 7%;
+}
+
+
+/*only screen and, makes it so people using older browsers get the desktop experience not mobile*/
+/*Learned from (https://www.youtube.com/watch?v=UUjNEMXZA-k)*/
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+
+    /*Text*/
+    h1 {
+        font-size: 2.25em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    /*Nav*/
+    nav {
+        font-size: 1em;
+    }
+
+    .logo img {
+        height: 85px;
+    }
+
+    .nav-items {
+        gap: 25px;
+    }
+
+    /*Travel Button*/
+    #button {
+        font-size: 2em;
+    }
+
+    /*Vacation PAckages*/
+    .text-columns {
+        flex-direction: column;
+    }
+
+    .text-column {
+        max-width: 100%;
+    }
+
+    /*Booking*/
+    .plans-container {
+        p {
+            font-size: .85em;
+        }
+
+    }
+
+    /*Back to top button*/
+    .to-top {
+        bottom: 16px;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+    /*Text*/
+    h1 {
+        font-size: 2.25em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+
+    /*Nav*/
+    nav {
+        font-size: 1em;
+    }
+
+    .logo img {
+        height: 85px;
+    }
+
+    .nav-items {
+        gap: 25px;
+    }
+
+    /*Travel Button*/
+    #button {
+        font-size: 2em;
+    }
+
+    /*Vacation Packages*/
+    .text-columns {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .text-column {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /*Booking*/
+    .plans-container {
+        p {
+            font-size: .85em;
+        }
+
+
+    }
+
+    /*Back to top button*/
+    .to-top {
+        bottom: 16px;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /*Back Button*/
+    .back-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .back-button img {
+        width: 15px;
+        height: 25px
+    }
+}
+
+@media only screen and (min-width: 601px) {
+
+    /*Text*/
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.75em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    /*Nav*/
+    nav {
+        font-size: 1.5em;
+    }
+
+    .logo img {
+        height: 100px;
+    }
+
+    .nav-items {
+        gap: 35px;
+    }
+
+    /*Travel Button*/
+    #button {
+        font-size: 3em;
+    }
+
+    /*Vacation Packages*/
+    .text-columns {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .text-column {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /*Booking*/
+    .plans-container {
+        p {
+            font-size: .85em;
+        }
+
+    }
+
+    input[type="radio"] {
+        transform: scale(1.5);
+        /* Adjust the scale as needed */
+    }
+
+    /*Back to top button*/
+    .to-top {
+        bottom: 18px;
+        right: 35px;
+        width: 75px;
+        height: 75px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    /*Nav*/
+    nav {
+        font-size: 2em;
+    }
+
+    .logo img {
+        height: 100px;
+    }
+
+    .nav-items {
+        gap: 40px;
+    }
+
+    /*Travel Button*/
+    #button {
+        font-size: 3.5em;
+    }
+
+    /*Vacation Packages*/
+    .text-columns {
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .text-column {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .plans-container {
+        p {
+            font-size: 1.5em;
+        }
+
+    }
+
+    input[type="radio"] {
+        transform: scale(2);
+        /* Adjust the scale as needed */
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    /*Text*/
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h2 {
+        font-size: 3.25em;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    /*Nav*/
+    nav {
+        font-size: 3em;
+    }
+
+    .logo img {
+        height: 150px;
+    }
+
+    .nav-items {
+        gap: 80px;
+    }
+
+    /*Travel Button*/
+    #button {
+        font-size: 4em;
+    }
+
+    /*Vacation Packages*/
+    .text-columns {
+        flex-direction: column;
+    }
+
+    .text-column {
+        max-width: 100%;
+    }
+
+    /*Booking*/
+    .plans-container {
+        p {
+            font-size: 2em;
+        }
+
+    }
+
+    input[type="radio"] {
+        transform: scale(2.5);
+        /* Adjust the scale as needed */
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    /*Nav*/
+    nav {
+        font-size: 3.5em;
+    }
+
+    .logo img {
+        height: 175px;
+    }
+
+    .nav-items {
+        gap: 80px;
+    }
+
+    /*Travel Button*/
+    #button {
+        font-size: 5em;
+    }
+
+    .text-columns {
+        flex-direction: row;
+    }
+
+    .text-column {
+        max-width: 100%;
+    }
+
+    /*Booking*/
+    .plans-container {
+        p {
+            font-size: 2.5em;
+        }
+
+    }
+
+    input[type="radio"] {
+        transform: scale(3.5);
+        /* Adjust the scale as needed */
+    }
+
+    .to-top {
+        bottom: 32px;
+        right: 64px;
+        width: 100px;
+        height: 100px;
+    }
+}
